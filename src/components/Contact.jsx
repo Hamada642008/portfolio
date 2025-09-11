@@ -21,7 +21,7 @@ export default function Contact() {
       form.append("email", formdata.email);
       form.append("message", formdata.message);
 
-      const res = await fetch("https://getform.io/f/abcd1234-xxxx-yyyy-zzzz-abcdef123456", {
+      const res = await fetch("https://getform.io/f/aqoeqpqa", {
         method: "POST",
         body: form,
       });
