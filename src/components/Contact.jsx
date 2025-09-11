@@ -40,21 +40,28 @@ export default function Contact() {
           className="background-card p-10 py-15 rounded-md flex flex-col gap-5"
         >
           <input
-            type="email"
-            name="email"
-            placeholder="Your email"
-            className="input"
-            required
-          />
-          <input
             type="text"
             name="full-name"
             placeholder="Your name"
             className="input"
             required
           />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            className="input"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your message"
+            rows="7"
+            className="input"
+            required
+          ></textarea>
 
-          {/* Honeypot (لمنع السبام) */}
+          {/* Honeypot لمنع السبام */}
           <input
             type="hidden"
             name="_gotcha"
