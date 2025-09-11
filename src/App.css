@@ -1,0 +1,79 @@
+.text {
+  color: #BFC0C0;
+}
+.background-hover{
+  background-color: #bfc0c0ba;
+}
+
+a {
+  color: #BFC0C0 ;
+  transition: 0.5s;
+}
+a:hover {
+    color: white ;
+
+}
+
+body {
+    background-color: #2D3142 !important;
+}
+.background {
+  background-color: #2D3142;
+}
+
+
+.background-card {
+  background-color: #4F5D75;
+}
+
+.card-shadow {
+  box-shadow: 4px 4px  20px #4F5D75;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #09a9c8;
+}
+
+.circle span {
+  background: #fff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  --swiper-navigation-color: #09a9c8 
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #5ed7ef;
+}
+
+.btn {
+  background-color: #EF8354;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+.btn:hover{
+  background-color: #ff9c71;
+}
+
+.input {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  margin: auto;
+  padding: 8px;
+}
