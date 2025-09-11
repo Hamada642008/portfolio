@@ -18,24 +18,21 @@ export default function Contact() {
             form.append("password", formdata.password);
             form.append("message", formdata.message);
 
-            // عشان FormSubmit يرجع JSON
-            form.append("_template", "json");
-
             const res = await fetch("https://formsubmit.co/3189450329fd349fc5f52c1f0d36a25f", {
-                method: "POST",
-                body: form
+            method: "POST",
+            body: form
             });
 
-            const result = await res.json();
-            if (result.success) {
-                setresponse("Thanks to contact me");
+            if (res.ok) {
+            setresponse("Thanks to contact me");
             } else {
-                setresponse("Error!!");
+            setresponse("Error!!");
             }
         } catch {
             setresponse("Error on server");
         }
-    };
+        };
+
 
     return (
         <section className='text-center my-20' id='contact'>
